@@ -11,22 +11,29 @@
 <body class="bg-body-pattern">
     
     <!-- Cabecera -->
-    <header id="header" class="bg-black font-sans text-white h-20">
+    <header id="header" class="bg-black bebas text-white h-20">
 
-        <div class="container mx-auto flex flex-row">
+        <div class="container w-11/12 mx-auto flex flex-row">
             
             <div id="logo" class="flex-1">
-                <h3>
-                    TAILWIND
-                </h3>
+                
+                <div class="group w-64 pt-0.5 pb-0.5 mt-4 ml-6 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:text-black hover:bg-gray-200">
+                    <span class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-low group-hover:animate-none group-hover:animate-from-below">
+                        S
+                    </span>
+                    <h3 class="block float-right text-4xl mt-1.5 mr-16 transition duration-100 group-hover:animate-from-right">
+                        TAILWIND
+                    </h3>
+                </div>
+
             </div>
 
             <nav class="flex-1">
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">FORMACIÓN</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                <ul class="flex flex-row h-20 items-center justify-end text-2xl text-center mr-6">
+                    <li class="menu-item"><a href="#">INICIO</a></li>
+                    <li class="menu-item"><a href="#">BLOG</a></li>
+                    <li class="menu-item"><a href="#">FORMACIÓN</a></li>
+                    <li class="menu-item"><a href="#">CONTACTO</a></li>
                 </ul>
             </nav>
 
