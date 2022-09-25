@@ -8,14 +8,14 @@
     <title>Curso Tailwind CSS - Kevin Sarria</title>
 </head>
 
-<body class="bg-body-pattern">
+<body class="bg-body-pattern bg-scroll">
     
     <!-- Cabecera -->
-    <header id="header" class="bg-black bebas text-white h-20">
+    <header id="header" class="bg-black bebas text-white h-20 xs:h-36">
 
-        <div class="container w-11/12 mx-auto flex flex-row">
+        <div class="container w-11/12 mx-auto flex md:flex-row xs:flex-col">
             
-            <div id="logo" class="flex-1">
+            <div id="logo" class="flex-1 xs:mx-auto">
                 
                 <div class="group w-64 pt-0.5 pb-0.5 mt-4 ml-6 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:text-black hover:bg-gray-200">
                     <span class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-low group-hover:animate-none group-hover:animate-from-below">
@@ -29,7 +29,7 @@
             </div>
 
             <nav class="flex-1">
-                <ul class="flex flex-row h-20 items-center justify-end text-2xl text-center mr-6">
+                <ul class="flex flex-row h-20 items-center text-2xl text-center md:mr-6 xs:mr-0 md:justify-end xs:text-center">
                     <li class="menu-item"><a href="#">INICIO</a></li>
                     <li class="menu-item"><a href="#">BLOG</a></li>
                     <li class="menu-item"><a href="#">FORMACIÓN</a></li>
@@ -42,6 +42,108 @@
     </header>
     <!-- Fin Cabecera -->
     
+
+    <!-- Inicio seccion información -->
+
+    <section class="container w-11/12 mx-auto">
+
+        <!-- Inicio banner -->
+
+        <div id="banner" class="w-full h-28 border-8 border-white overflow-hidden shadow m-5 bg-banner bg-banner-position animate-bg-banner">
+
+
+
+            <h1 class="text-banner block text-white text-4xl font-normal tracking-wider m-7 mx-auto text-center animate-text-banner xs:text-2xl xs:mt-8">Cursos de Desarrollo web con Kevin Sarria</h1>
+
+        </div>
+
+        <!-- Fin banner -->
+
+        <!-- Inicio tarjetas -->
+        <div id="cards" class="flex flex-nowrap justify-between">
+
+            <div class="card">
+
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">H</span>
+
+                <h2 class="card-category group-hover:text-white">
+                    Desarrollo web
+                </h2>
+
+                <p class="card-description group-hover:text-white">
+                    Aprende los principales lenguajes de desarrollo web
+                </p>
+
+            </div>
+
+            
+            <div class="card">
+
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">_</span>
+
+                <h2 class="card-category group-hover:text-white">
+                    Sistemas operativos
+                </h2>
+
+                <p class="card-description group-hover:text-white">
+                    Aprende a adminsitrar sistemas operativos
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">S</span>
+
+                <h2 class="card-category group-hover:text-white">
+                    Hardware
+                </h2>
+
+                <p class="card-description group-hover:text-white">
+                    Conoce todo acerca del hardware 
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">u</span>
+
+                <h2 class="card-category group-hover:text-white">
+                    Redes e internet
+                </h2>
+
+                <p class="card-description group-hover:text-white">
+                    Configura y administra redes y servidores
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">a</span>
+
+                <h2 class="card-category group-hover:text-white">
+                    Bases de datos
+                </h2>
+
+                <p class="card-description group-hover:text-white">
+                    Aprende a trabajar con bases de datos
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Fin tarjetas -->
+
+    </section>
+
+    <!-- Fin -->
+
     
 </body>
 
