@@ -64,13 +64,13 @@
 
             <div class="card">
 
-                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">H</span>
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:animate-show-card-icon">H</span>
 
-                <h2 class="card-category group-hover:text-white">
+                <h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
                     Desarrollo web
                 </h2>
 
-                <p class="card-description group-hover:text-white">
+                <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                     Aprende los principales lenguajes de desarrollo web
                 </p>
 
@@ -79,13 +79,13 @@
             
             <div class="card">
 
-                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">_</span>
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:animate-show-card-icon">_</span>
 
-                <h2 class="card-category group-hover:text-white">
+                <h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
                     Sistemas operativos
                 </h2>
 
-                <p class="card-description group-hover:text-white">
+                <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                     Aprende a adminsitrar sistemas operativos
                 </p>
 
@@ -93,13 +93,13 @@
 
             <div class="card">
 
-                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">S</span>
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:animate-show-card-icon">S</span>
 
-                <h2 class="card-category group-hover:text-white">
+                <h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
                     Hardware
                 </h2>
 
-                <p class="card-description group-hover:text-white">
+                <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                     Conoce todo acerca del hardware 
                 </p>
 
@@ -108,13 +108,13 @@
 
             <div class="card">
 
-                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">u</span>
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:animate-show-card-icon">u</span>
 
-                <h2 class="card-category group-hover:text-white">
+                <h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
                     Redes e internet
                 </h2>
 
-                <p class="card-description group-hover:text-white">
+                <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                     Configura y administra redes y servidores
                 </p>
 
@@ -122,13 +122,13 @@
 
             <div class="card">
 
-                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro">a</span>
+                <span class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:animate-show-card-icon">a</span>
 
-                <h2 class="card-category group-hover:text-white">
+                <h2 class="card-category group-hover:text-white group-hover:animate-show-card-category">
                     Bases de datos
                 </h2>
 
-                <p class="card-description group-hover:text-white">
+                <p class="card-description group-hover:text-white group-hover:animate-show-card-description">
                     Aprende a trabajar con bases de datos
                 </p>
 
@@ -143,6 +143,110 @@
     </section>
 
     <!-- Fin -->
+
+
+
+    <!-- Inicio contenido principal -->
+
+    <main class="container w-11/12 flex flex-row mx-auto">
+        
+
+        <!-- Inicio barra lateral -->
+
+        <aside id="lateral" class="order-2 flex-none w-72 min-h-full mt-5">
+            <h3>Buscar</h3>
+            
+            <div id="search">
+                <form action="">
+
+                    <input type="text" />
+                    <input type="button" value="Buscar">
+
+                </form>
+            </div>
+
+            <h3>Login</h3>
+
+            <div id="login">
+                <form action="">
+                    
+                    <label for="email">Usuario</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password">
+
+                    <input type="submit" value="Entrar">
+                    <input type="reset" value="Limpiar">
+
+                    <a href="#">Registrate aqui</a>
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+
+                </form>
+            </div>
+
+            <h3>Redes Sociales</h3>
+
+            <div id="social-media">
+                
+                <div class="twitter">
+                    <a href="#">Twitter</a>
+                    <p>Twitter</p>
+                </div>
+
+                <div class="facebook">
+                    <a href="#">Facebook</a>
+                    <p>Facebook</p>
+                </div>
+
+                <div class="youtube">
+                    <a href="#">Youtube</a>
+                    <p>Youtube</p>
+                </div>
+
+            </div>
+
+            <h3>Patrocinadores</h3>
+
+            <div id="sponsors">
+
+            </div>
+
+        </aside>
+
+        <!-- Fin barra lateral -->
+
+
+        <!-- Inicio articulos -->
+
+        <section class="order-1 flex-grow mr-10">
+
+            <h2>Ultimos articulos</h2>
+
+            <article>
+
+                <div>
+                    <span>Fecha: 10 Marz</span>
+                    <span>Categoria: Pruebas</span>
+                </div>
+
+                <h4>
+                    <a href="#">Titulo del articulo</a>
+                </h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati, soluta, quasi voluptate quaerat nihil perferendis delectus culpa earum deleniti harum blanditiis voluptatum cum error molestias velit neque, tempore similique repellat. Labore, cum ducimus beatae illo soluta dignissimos, accusantium vel, fugit dolore maiores excepturi nesciunt? Saepe voluptatem minima fugit dignissimos provident, facere vitae, tenetur ducimus doloremque delectus illo quibusdam voluptatibus?</p>
+
+            </article>
+
+        </section>
+
+        <!-- Fin articulos -->
+
+
+    </main>
+
+
+    <!-- Fin contenido principal -->
 
     
 </body>

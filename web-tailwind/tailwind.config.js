@@ -21,7 +21,10 @@ module.exports = {
                 'from-below': 'fromBellow 500ms linear',
                 'from-right': 'fromRight 300ms linear',
                 'bg-banner': 'backBanner 10s linear',
-                'text-banner': 'showBannerText 10s linear'
+                'text-banner': 'showBannerText 10s linear',
+                'show-card-icon': 'showCardIcon 300ms linear',
+                'show-card-category': 'showCardCategory 400ms linear',
+                'show-card-description': 'showCardDescription 400ms linear'
             },
             keyframes: {
                 fromBellow: {
@@ -59,7 +62,32 @@ module.exports = {
                         'color': 'white',
                         'opacity': 1
                      }
-                }
+                     
+                },
+                showCardIcon: {
+                    'from': { 
+                        'transform': 'translateY(-200%)'
+                     },
+                    'to': { 
+                        'transform': 'translateY(0%)'
+                     }
+                 },
+                 showCardCategory: {
+                    'from': { 
+                        'transform': 'translateY(-300%)'
+                     },
+                    'to': { 
+                        'transform': 'translateY(0%)'
+                     }
+                 },
+                 showCardDescription: {
+                    'from': { 
+                        'transform': 'translateX(-300%)'
+                     },
+                    'to': { 
+                        'transform': 'translateX(0%)'
+                     }
+                 }
             }
         }
     },
