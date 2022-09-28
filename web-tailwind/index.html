@@ -153,28 +153,28 @@
 
         <!-- Inicio barra lateral -->
 
-        <aside id="lateral" class="order-2 flex-none w-72 min-h-full mt-5">
-            <h3>Buscar</h3>
+        <aside id="lateral" class="order-2 flex-none w-72 min-h-full">
+            <h3 class="aside-header">Buscar</h3>
             
-            <div id="search">
-                <form action="">
+            <div id="search" class="w-11/12 h-7 m-2.5 mx-auto bg-white border border-gray-200 rounded shadow-inner">
+                <form>
 
-                    <input type="text" />
-                    <input type="button" value="Buscar">
+                    <input type="text" class="w-10/12 h-6 border-none pl-1.5 rounded-md bg-transparent text-gray-500 transition duration-300 outline-none focus:outline-none" />
+                    <input type="button" value="L" class="symbol h-6 cursor-pointer text-base bg-transparent border-none text-gray-500 pl-2">
 
                 </form>
             </div>
 
-            <h3>Login</h3>
+            <h3 class="aside-header">Login</h3>
 
-            <div id="login">
+            <div id="login" class="aside-box">
                 <form action="">
                     
-                    <label for="email">Usuario</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email" class="login-icon">U</label>
+                    <input type="email" name="email" id="email" class="login-input">
 
-                    <label for="password">Contraseña</label>
-                    <input type="password" name="password" id="password">
+                    <label for="password" class="login-icon text-xl ml-7 mt-6">w</label>
+                    <input type="password" name="password" id="password" class="login-input">
 
                     <input type="submit" value="Entrar">
                     <input type="reset" value="Limpiar">
@@ -185,9 +185,9 @@
                 </form>
             </div>
 
-            <h3>Redes Sociales</h3>
+            <h3 class="aside-header">Redes Sociales</h3>
 
-            <div id="social-media">
+            <div id="social-media" class="aside-box">
                 
                 <div class="twitter">
                     <a href="#">Twitter</a>
@@ -206,9 +206,9 @@
 
             </div>
 
-            <h3>Patrocinadores</h3>
+            <h3 class="aside-header">Patrocinadores</h3>
 
-            <div id="sponsors">
+            <div id="sponsors"  class="aside-box">
 
             </div>
 

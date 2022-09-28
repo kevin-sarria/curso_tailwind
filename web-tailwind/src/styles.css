@@ -100,7 +100,7 @@
 
     .articles-header {
         font-family: "BebasNeue";
-        background: url('../img/pxgray.png');
+        background: url('../img/pxgray.png'), white;
         @apply block w-full h-20 text-center text-5xl font-medium tracking-widest pt-5 border shadow-header3d;
     }
 
@@ -129,6 +129,26 @@
         @apply block mt-3 mb-3 text-base font-sans font-normal;
     }
 
+
+    .aside-header {
+        font-family: "BebasNeue";
+        background: url('../img/pxgray.png'), white;
+        @apply block h-11 leading-10 text-3xl font-medium tracking-widest pl-3.5 pt-1 mb-3.5 border shadow-header3d;
+    }
+
+    .aside-box {
+        @apply w-10/12 h-60 mx-auto mt-5 mb-7 pt-1 bg-white shadow-box;
+    }
+
+    .login-icon {
+        font-family: "WebSymbolsRegular";
+        @apply text-center absolute ml-7 mt-1 h-8;
+    }
+
+    .login-input {
+        @apply block mx-auto mt-5 w-10/12 h-8 border border-gray-300 shadow-inner pl-7 rounded text-gray-500 transition duration-300 outline-none focus:outline-none focus:text-gray-600;
+
+    }
 
 
 }
