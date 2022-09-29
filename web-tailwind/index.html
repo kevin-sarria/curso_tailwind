@@ -11,11 +11,11 @@
 <body class="bg-body-pattern bg-scroll">
     
     <!-- Cabecera -->
-    <header id="header" class="bg-black bebas text-white h-20 xs:h-36">
+    <header id="header" class="bg-black bebas text-white sm:h-20 xs:h-60">
 
         <div class="container w-11/12 mx-auto flex md:flex-row xs:flex-col">
             
-            <div id="logo" class="flex-1 xs:mx-auto">
+            <div id="logo" class="flex-1 xs:mx-auto xs:mb-3">
                 
                 <div class="group w-64 pt-0.5 pb-0.5 mt-4 ml-6 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:text-black hover:bg-gray-200">
                     <span class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-low group-hover:animate-none group-hover:animate-from-below">
@@ -28,8 +28,8 @@
 
             </div>
 
-            <nav class="flex-1">
-                <ul class="flex flex-row h-20 items-center text-2xl text-center md:mr-6 xs:mr-0 md:justify-end xs:text-center">
+            <nav class="flex-1 my-auto">
+                <ul class="flex xs:flex-col lg:flex-row xs:h-40 lg:h-20 items-center text-2xl text-center md:mr-6 xs:mr-0 md:justify-end xs:text-center">
                     <li class="menu-item"><a href="#">INICIO</a></li>
                     <li class="menu-item"><a href="#">BLOG</a></li>
                     <li class="menu-item"><a href="#">FORMACIÓN</a></li>
@@ -49,7 +49,7 @@
 
         <!-- Inicio banner -->
 
-        <div id="banner" class="w-full h-28 border-8 border-white overflow-hidden shadow m-5 bg-banner bg-banner-position animate-bg-banner">
+        <div id="banner" class="w-full h-28 border-8 border-white overflow-hidden shadow xs:m-2 lg:m-5 bg-banner bg-banner-position animate-bg-banner">
 
 
 
@@ -60,7 +60,7 @@
         <!-- Fin banner -->
 
         <!-- Inicio tarjetas -->
-        <div id="cards" class="flex flex-nowrap justify-between">
+        <div id="cards" class="sm:flex flex-nowrap justify-between">
 
             <div class="card">
 
@@ -148,12 +148,12 @@
 
     <!-- Inicio contenido principal -->
 
-    <main class="container w-11/12 mt-5 flex flex-row mx-auto">
+    <main class="container w-11/12 mt-5 flex xs:flex-col md:flex-row mx-auto">
         
 
         <!-- Inicio barra lateral -->
 
-        <aside id="lateral" class="order-2 flex-none w-72 min-h-full">
+        <aside id="lateral" class="order-2 flex-none w-72 xs:w-full lg:min-h-full mx-auto">
             <h3 class="aside-header">Buscar</h3>
             
             <div id="search" class="w-11/12 h-7 m-2.5 mx-auto bg-white border border-gray-200 rounded shadow-inner">
@@ -173,14 +173,14 @@
                     <label for="email" class="login-icon">U</label>
                     <input type="email" name="email" id="email" class="login-input">
 
-                    <label for="password" class="login-icon text-xl ml-7 mt-6">w</label>
+                    <label for="password" class="login-icon text-xl md:ml-7 mt-6">w</label>
                     <input type="password" name="password" id="password" class="login-input">
 
-                    <input type="submit" value="Entrar">
-                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Entrar" class="login-button">
+                    <input type="reset" value="Limpiar" class="login-button ml-1">
 
-                    <a href="#">Registrate aqui</a>
-                    <a href="#">¿Has olvidado tu contraseña?</a>
+                    <a href="#" class="login-link">Registrate aqui</a>
+                    <a href="#" class="login-link">¿Has olvidado tu contraseña?</a>
 
                 </form>
             </div>
@@ -189,19 +189,19 @@
 
             <div id="social-media" class="aside-box">
                 
-                <div class="twitter">
-                    <a href="#">Twitter</a>
-                    <p>Twitter</p>
+                <div class="group twitter">
+                    <a href="#" class="social-icon">t</a>
+                    <p class="social-overlay">Twitter</p>
                 </div>
 
-                <div class="facebook">
-                    <a href="#">Facebook</a>
-                    <p>Facebook</p>
+                <div class="group facebook">
+                    <a href="#" class="social-icon">f</a>
+                    <p class="social-overlay">Facebook</p>
                 </div>
 
-                <div class="youtube">
-                    <a href="#">Youtube</a>
-                    <p>Youtube</p>
+                <div class="group youtube">
+                    <a href="#" class="social-icon">y</a>
+                    <p class="social-overlay">Youtube</p>
                 </div>
 
             </div>
@@ -219,7 +219,7 @@
 
         <!-- Inicio articulos -->
 
-        <section class="order-1 flex-grow mr-10">
+        <section class="order-1 flex-grow mr-10 xs:mx-auto">
 
             <h2 class="articles-header">Ultimos articulos</h2>
 

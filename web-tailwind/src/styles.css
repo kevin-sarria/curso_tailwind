@@ -101,7 +101,7 @@
     .articles-header {
         font-family: "BebasNeue";
         background: url('../img/pxgray.png'), white;
-        @apply block w-full h-20 text-center text-5xl font-medium tracking-widest pt-5 border shadow-header3d;
+        @apply block w-full h-20 text-center xs:text-3xl lg:text-5xl font-medium tracking-widest pt-5 border shadow-header3d;
     }
 
     .article-item {
@@ -117,7 +117,7 @@
     }
 
     .article-head {
-        @apply block text-2xl m-1;
+        @apply block text-2xl m-1 xs:mt-12;
     }
 
     .article-head a {
@@ -142,7 +142,7 @@
 
     .login-icon {
         font-family: "WebSymbolsRegular";
-        @apply text-center absolute ml-7 mt-1 h-8;
+        @apply text-center absolute xs:ml-11 md:ml-7 mt-1 h-8;
     }
 
     .login-input {
@@ -150,6 +150,24 @@
 
     }
 
+    .login-button {
+        font-family: "TrebuchetMS";
+        @apply w-24 h-8 mt-5 ml-5 mb-5 text-center text-white text-base font-light border border-azul-oscuro bg-gradient-to-b from-azul-claro to-azul-oscuro rounded-none cursor-pointer transition duration-300 hover:shadow-md;
+    }
+
+
+    .login-link {
+        @apply block ml-4 text-sm text-gray-600 hover:underline hover:text-azul-oscuro;
+    }
+
+    .social-icon {
+        font-family: "WebSymbolsRegular";
+        @apply block text-gray-700 text-3xl mt-3 mb-5 ml-5;
+    }
+
+    .social-overlay {
+        @apply block absolute h-10 pl-2 pr-2 pt-1 ml-16 -mt-14 font-sans font-bold text-gray-700 tracking-wide shadow-md border-4 border-gray-100 transition duration-300 opacity-0 transform -translate-x-3/4 bg-gray-100 group-hover:opacity-100 group-hover:transform group-hover:translate-x-1 cursor-pointer;
+    }
 
 }
 
